@@ -1,0 +1,139 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    margin: 0 auto;
+    width: 85%;
+    max-width: 1440px;
+
+    position: relative;
+}
+
+@media screen and (max-width: 450px){
+    .container{
+        width: 95%;
+    }
+}
+
+.categoryContainer {
+    margin-top: 25px;
+    padding: 20px 25px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #3A3A3A;
+    border-radius: 11px;
+}
+
+.categoryContainerTitle {
+    font-weight: 700;
+    font-size: 1.938rem;
+    line-height: 2.438rem;
+
+    color: #FFFFFF;
+}
+
+.categories {
+    text-align: right;
+    flex: 1;
+}
+
+.categories input[type='radio'] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.categories label {
+    height: 100%;
+    width: auto;
+
+    border: 1px solid #3A3A3A;
+    border-radius: 5px;
+
+    font-weight: 300;
+    font-size: 1.25rem;
+
+    color: #B0B0B0;
+
+    padding: 5px;
+
+    transition: color .5s ease, border .5s ease;
+
+    cursor: pointer;
+}
+
+.categories label:hover {
+    border: 1px solid #707070;
+}
+
+.categories label:not(last-child) {
+    margin-right: 3px;
+}
+
+.categories input[type='radio']:checked + label {
+    color: #FFFFFF;
+    border: 1px solid #C4C4C4;
+}
+
+.cardsContainer {
+    display: grid;
+    grid-gap: 18px;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin: 75px 0;
+}
+
+@media screen and (max-width: 1260px){
+    .categoryContainer {
+        flex-direction: column;
+    }
+    .categoryContainerTitle {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .cardsContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 760px){
+    .categoryContainer {
+        padding: 20px 15px;
+    }
+    .categories label {
+        font-size: 1.063rem;
+    }
+    .cardsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .categoryContainer {
+        padding: 20px 15px 15px 15px;
+    }
+    .categories {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .categories label {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .cardsContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 370px){
+    .categoryContainerTitle {
+        font-size: 1.563rem;
+    }
+}

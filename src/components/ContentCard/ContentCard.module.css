@@ -1,0 +1,91 @@
+.container {
+    width: 100%;
+    height: auto;
+
+    background-color: #3A3A3A;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 19px;
+
+    padding: 24px 24px 19px 28px;
+
+    border-radius: 11px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.938rem;
+    line-height: 2.438rem;
+
+    color: #FFFFFF;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 1.063rem;
+    line-height: 2.063rem;
+
+    color: #000000;
+
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+
+    margin-top: 9px;
+}
+
+.button {
+    padding: 11px 14px;
+    margin-right: 5px;
+
+    border-radius: 3px;
+
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+
+    color: #FFFFFF;
+
+    transition: .5s filter;
+}
+
+.button:hover {
+    filter: brightness(.8);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px){
+    .title, .subtitle {
+        text-align: center;
+    }
+    .subtitle {
+        line-height: 1.7rem;
+    }
+    .container {
+        padding: 20px 20px 9px 20px;
+        align-items: center;
+        width: 100%!important;
+    }
+    .buttonsContainer{
+        flex-wrap: wrap-reverse;
+        margin-right: 0;
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .widget{
+        width: 280px;
+        height: 450px;
+    }
+}
