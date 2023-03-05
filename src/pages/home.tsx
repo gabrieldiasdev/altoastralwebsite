@@ -64,7 +64,7 @@ const Home = () => {
                             {
                                 backgroundColor: '#616161',
                                 text: 'Conectar Discord',
-                                href: 'https://discord.gg/5wqeJ5qWmR'
+                                href: 'https://discord.gg/SJZhHj52gV'
                             },
                         ]}
                         widget={

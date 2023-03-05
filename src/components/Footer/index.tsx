@@ -2,7 +2,7 @@ import styles from './Footer.module.css';
 import { YoutubeLogo, InstagramLogo, DiscordLogo, Copyright } from 'phosphor-react';
 
 const Footer = () => {
-    return(
+    return (
         <footer className={styles.container}>
             <div className={styles.subContainer}>
                 <section className={styles.guidelines}>
@@ -10,55 +10,54 @@ const Footer = () => {
                         ALTO ASTRAL RP
                     </h6>
                     <div className={styles.guidelinesSubTitleContainer}>
-                        <Copyright 
-                            size={22} 
-                            color="#6D6D6C" 
+                        <Copyright
+                            size={22}
+                            color="#6D6D6C"
                         />
                         <p className={styles.guidelinesSubTitle}>
-                            2021 - 2022 ALTO ASTRAL ROLEPLAY - Todos <br/>
+                            2021 - 2022 ALTO ASTRAL ROLEPLAY - Todos <br />
                             os direitos reservados
                         </p>
                     </div>
                 </section>
 
                 <section className={styles.socialMedias}>
-                    <a 
+                    <a
                         className={styles.socialMediaBlock}
-                        href="https://www.youtube.com/channel/UCZSalLHp1WEjxFZrGKyqlSw" 
-                        target="_blank" 
+                        href="javascript:void(0);"
                         rel="noreferrer"
                     >
-                        <YoutubeLogo 
+                        <YoutubeLogo
                             className={styles.socialMediaIcon}
-                            size={24} 
-                            color="#FFF" 
-                            weight="fill" 
+                            size={24}
+                            color="#FFF"
+                            weight="fill"
                         />
                     </a>
-                    <a 
+                    <a
                         className={styles.socialMediaBlock}
-                        href="https://www.instagram.com/alto.astralrp/" 
-                        target="_blank" 
+                        href="https://www.instagram.com/altoastralrpmta/"
+                        target="_blank"
                         rel="noreferrer"
                     >
                         <InstagramLogo
                             className={styles.socialMediaIcon}
-                            size={24} 
-                            color="#FFF" 
-                            weight="fill" 
+                            size={24}
+                            color="#FFF"
+                            weight="fill"
                         />
                     </a>
-                    <a 
+                    <a
                         className={styles.socialMediaBlock}
-                        href="https://discord.gg/PFugMdaTTS" 
-                        target="_blank" 
+                        href="https://discord.gg/SJZhHj52gV"
+                        target="_blank"
                         rel="noreferrer"
                     >
-                        <DiscordLogo 
+                        <DiscordLogo
                             className={styles.socialMediaIcon}
-                            size={24} 
-                            color="#FFF" 
-                            weight="fill" 
+                            size={24}
+                            color="#FFF"
+                            weight="fill"
                         />
                     </a>
                 </section>
